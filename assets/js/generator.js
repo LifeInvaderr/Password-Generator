@@ -35,6 +35,14 @@ console.log(number());
 console.log(symbol());
 
 // Question to ask for character length
+var charlength = Number(prompt("Enter the amount of characters between 8 and 128."));
+while (isNaN(length) || length < 8 || length >128) length= Number(prompt("Incorrect length, must be 8-128 characters."))
+
+// Questions about what characters to include
+var lowerCase = confirm("Do you want to use lowercase letters?");
+var upperCase = confirm("Do you want to use uppercase letters?");
+var number = confirm("Do you want to use numbers?");
+var symbol = confirm("Do you want to use symbols?");
 
 
 
@@ -55,6 +63,8 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
+
+// I tried this, however I ran into an issue in the loop running over and over ending up crashing browser
 function promptForNumber( text)
 {
     if(text == '' ){
