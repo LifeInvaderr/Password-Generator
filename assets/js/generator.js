@@ -19,20 +19,45 @@ var randomFunc = {
 
 
 // DOM elments
-var ResultEl = document.getElementById('password');
+passwordResultVal = document.getElementById('password')
+
+
+
 
 document.getElementById('generate').addEventListener('click', () => {
-  ResultEl.value = generatePassword(lowercaseQues, uppercaseQues, numberQues, symbolQues, length)
+  passwordResultVal.value = generatePassword(lowercaseQues, uppercaseQues, numberQues, symbolQues, length);
 
 });
 
-console.log(generatePassword)
 
 
 
 // Password Function
 
-function generatePassword(lower, upper, number, symbol, length)
+function generatePassword(lower, upper, number, symbol, length) {
+  let generatePassword = '';
+  const characterTypes = lower + upper + number + symbol;
+  const characterArray = [{ lower }, { upper }, { number }, { symbol }].filter
+    (item => Object.values(item)[0]);
+
+  console.log("characterTypes", characterTypes);
+  console.log("characterArray:", characterArray);
+
+  if (characterTypes === 0) {
+    return '';
+  };
+
+  for (let i = 0; i < length; i += characterTypes) {
+    characterArray.forEach(type => {
+      var functionNames = Object.keys(type)[0];
+      generatePassword += randomFunc[functionNames]();
+    });
+  }
+  var finalpassword = generatePassword.slice(0, length)
+  return finalpassword;
+};
+
+
 
 // Password Functions of where to grab from
 function lowercaseRandom() {
@@ -56,6 +81,4 @@ function symbolRandom() {
 }
 
 
-
-
-
+console.log(lowercaseRandom())
