@@ -18,5 +18,3 @@ Lastly, what I stuggle with the most is understanding how to make the user answe
 
 ## What I learned
 After taking this project with Javascript, I now understand that working with Javascript will take time to learn, and to unlearn my Python thinking.
-
-With that said, I am going to need a lot more time researching and understanding Javascript.
