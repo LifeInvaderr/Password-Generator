@@ -1,20 +1,34 @@
 # Password Generator
 URL to this repository https://github.com/LifeInvaderr/Password-Generator
+
 URL to the deployed repositry https://lifeinvaderr.github.io/Password-Generator/
 
-# How I started
-In this project, working with Javascript was a more difficult task creating, as I needed to learn more about how Javascript works. I am more used to the confort that Python and Program R offer to the table in creating elements, arrays, and outputs.
+![Password Generator Webpage](assets/images/Password-Generator-Webpage.PNG)
 
-When I started, I had immediate trouble with programming for loops, as the loop would continuously break, reloop, and even crash the browser. Instead of following the path of having for loops for the values such as "uppercase" and "lowercase". I used the string method, as to make the string an array and grab at random, from the data set for each.
+## Description
+With Password Generator, users are able to create a randomly generated password.
 
-## What I had struggled with
-After researching how Javascript works such as creating arrays, variables, prompting users, and comfirms. What I struggled the most is how to make my code work. I understood what I had needed in this project, however I didn't understand how to get my code to talk to each other. 
+## Table of Contents
+* [Technologies](#technologies)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Questions](#questions)
+ 
+## Technologies
+* Javascript
+* HTML5
+* CSS
 
-I understood that I needed to ask a user a confirmation window, however, how would I get it to talk to that variable set.
+## Installation
+To install this repostiry, please their clone or install the zip version
 
-After getting them to talk to each other, I didn't understand how to link my results and buttons from the Index html. Fortunatly I found out last minute.
+Once installed, open the index.html within a browser to intialize the question prompt
 
-Lastly, what I stuggle with the most is understanding how to make the user answer each question of elements falsly, and return a prompt saying that they need to pick at least one.  I understand that I need to cut my loses, and return at a later time to solve.
+## Usage
+With password generator, users can create a randomly generated password after prompted with a series of questions such as character lenght, to character types.
 
-## What I learned
-After taking this project with Javascript, I now understand that working with Javascript will take time to learn, and to unlearn my Python thinking.
+## Questions
+
+For any questions or concerns, please email me at matthewkausfox@gmail.com
+
+Thank you!
